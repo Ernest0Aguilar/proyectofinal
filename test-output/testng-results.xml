@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58583" started-at="2021-07-02T11:59:38 CDT" finished-at="2021-07-02T12:00:36 CDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58583" started-at="2021-07-02T11:59:38 CDT" finished-at="2021-07-02T12:00:36 CDT">
+      <class name="MyTest.Test1">
+        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:MyTest.Test1@9a7504c]" name="setBaseURL" is-config="true" duration-ms="17372" started-at="2021-07-02T11:59:38 CDT" finished-at="2021-07-02T11:59:55 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseURL -->
+        <test-method status="PASS" signature="clickSignIn()[pri:0, instance:MyTest.Test1@9a7504c]" name="clickSignIn" duration-ms="12336" started-at="2021-07-02T11:59:55 CDT" finished-at="2021-07-02T12:00:08 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignIn -->
+        <test-method status="PASS" signature="fillCreateMail()[pri:0, instance:MyTest.Test1@9a7504c]" name="fillCreateMail" duration-ms="11213" started-at="2021-07-02T12:00:08 CDT" finished-at="2021-07-02T12:00:19 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillCreateMail -->
+        <test-method status="PASS" signature="fillRegisterData()[pri:0, instance:MyTest.Test1@9a7504c]" name="fillRegisterData" duration-ms="17606" started-at="2021-07-02T12:00:19 CDT" finished-at="2021-07-02T12:00:36 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillRegisterData -->
+      </class> <!-- MyTest.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
