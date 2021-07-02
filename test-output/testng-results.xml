@@ -1,28 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58583" started-at="2021-07-02T11:59:38 CDT" finished-at="2021-07-02T12:00:36 CDT">
+  <suite name="Default suite" duration-ms="97868" started-at="2021-07-02T16:32:42 CDT" finished-at="2021-07-02T16:34:20 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58583" started-at="2021-07-02T11:59:38 CDT" finished-at="2021-07-02T12:00:36 CDT">
+    <test name="Default test" duration-ms="97868" started-at="2021-07-02T16:32:42 CDT" finished-at="2021-07-02T16:34:20 CDT">
       <class name="MyTest.Test1">
-        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:MyTest.Test1@9a7504c]" name="setBaseURL" is-config="true" duration-ms="17372" started-at="2021-07-02T11:59:38 CDT" finished-at="2021-07-02T11:59:55 CDT">
+        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:MyTest.Test1@2c039ac6]" name="setBaseURL" is-config="true" duration-ms="19892" started-at="2021-07-02T16:32:42 CDT" finished-at="2021-07-02T16:33:02 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseURL -->
-        <test-method status="PASS" signature="clickSignIn()[pri:0, instance:MyTest.Test1@9a7504c]" name="clickSignIn" duration-ms="12336" started-at="2021-07-02T11:59:55 CDT" finished-at="2021-07-02T12:00:08 CDT">
+        <test-method status="PASS" signature="clickSignIn()[pri:1, instance:MyTest.Test1@2c039ac6]" name="clickSignIn" duration-ms="6731" started-at="2021-07-02T16:33:02 CDT" finished-at="2021-07-02T16:33:09 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSignIn -->
-        <test-method status="PASS" signature="fillCreateMail()[pri:0, instance:MyTest.Test1@9a7504c]" name="fillCreateMail" duration-ms="11213" started-at="2021-07-02T12:00:08 CDT" finished-at="2021-07-02T12:00:19 CDT">
+        <test-method status="PASS" signature="fillCreateMail()[pri:2, instance:MyTest.Test1@2c039ac6]" name="fillCreateMail" duration-ms="12210" started-at="2021-07-02T16:33:09 CDT" finished-at="2021-07-02T16:33:21 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillCreateMail -->
-        <test-method status="PASS" signature="fillRegisterData()[pri:0, instance:MyTest.Test1@9a7504c]" name="fillRegisterData" duration-ms="17606" started-at="2021-07-02T12:00:19 CDT" finished-at="2021-07-02T12:00:36 CDT">
+        <test-method status="PASS" signature="fillRegisterData()[pri:3, instance:MyTest.Test1@2c039ac6]" name="fillRegisterData" duration-ms="13770" started-at="2021-07-02T16:33:21 CDT" finished-at="2021-07-02T16:33:34 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillRegisterData -->
+        <test-method status="PASS" signature="search()[pri:4, instance:MyTest.Test1@2c039ac6]" name="search" duration-ms="24012" started-at="2021-07-02T16:33:34 CDT" finished-at="2021-07-02T16:33:59 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="colorSelection()[pri:5, instance:MyTest.Test1@2c039ac6]" name="colorSelection" duration-ms="10749" started-at="2021-07-02T16:33:59 CDT" finished-at="2021-07-02T16:34:09 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- colorSelection -->
+        <test-method status="FAIL" signature="continuarSelection()[pri:6, instance:MyTest.Test1@2c039ac6]" name="continuarSelection" duration-ms="9052" started-at="2021-07-02T16:34:09 CDT" finished-at="2021-07-02T16:34:18 CDT">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'MTY-VK5N1ZELQVG', ip: '10.0.0.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ERNEST~1.AGU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a448c57e24be5cbdd8dfcbb1312803aa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'MTY-VK5N1ZELQVG', ip: '10.0.0.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ERNEST~1.AGU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a448c57e24be5cbdd8dfcbb1312803aa
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.ProductDetails.continuar(ProductDetails.java:46)
+at MyTest.Test1.continuarSelection(Test1.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- continuarSelection -->
+        <test-method status="PASS" signature="endSession()[pri:0, instance:MyTest.Test1@2c039ac6]" name="endSession" is-config="true" duration-ms="1382" started-at="2021-07-02T16:34:18 CDT" finished-at="2021-07-02T16:34:20 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSession -->
       </class> <!-- MyTest.Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
