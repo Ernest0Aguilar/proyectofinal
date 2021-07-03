@@ -30,7 +30,7 @@ public class Test1 {
 	
 	@BeforeTest
 	public void setBaseURL() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C://Users//ernesto.aguilar//Documents//chromedriver_win32//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://Users//e.esquivel.macias//Downloads//chromedriver_win32//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
@@ -119,7 +119,7 @@ public class Test1 {
     
     //-------------------------------------------------------------//
     
-    @Test (priority = 8)
+    @Test (priority = 9)
     public void shippingCheckOut() throws InterruptedException {
     	Shipping checkOut = PageFactory.initElements(driver, Shipping.class);
     	Thread.sleep(4000);
@@ -129,7 +129,7 @@ public class Test1 {
     
     //-------------------------------------------------------------//
     
-    @Test (priority = 9)
+    @Test (priority = 10)
     public void choosePaymentMethod() throws InterruptedException {
     	PaymentCheckOut method = PageFactory.initElements(driver, PaymentCheckOut.class);
     	Thread.sleep(4000);
@@ -139,7 +139,7 @@ public class Test1 {
     
     //-------------------------------------------------------------//
     
-    @Test (priority = 10)
+    @Test (priority = 11)
     public void confirmOrder() throws InterruptedException {
     	OrderSummary confirm = PageFactory.initElements(driver, OrderSummary.class);
     	Thread.sleep(4000);
@@ -149,7 +149,7 @@ public class Test1 {
     
     //-------------------------------------------------------------//
     
-    @Test (priority = 11)
+    @Test (priority = 12)
     public void returnToOrders() throws InterruptedException {
     	OrderConfirmation confirm = PageFactory.initElements(driver, OrderConfirmation.class);
     	Thread.sleep(4000);
@@ -157,8 +157,8 @@ public class Test1 {
     	
     }
     
-    //@AfterTest
-    //public void endSession() {
-    //driver.quit();
-    //}
+    @AfterTest
+    public void endSession() {
+    driver.quit();
+    }
 }
