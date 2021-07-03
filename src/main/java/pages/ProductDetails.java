@@ -4,34 +4,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ProductDetails {
-	
-	final WebDriver driver;
-	
-	public ProductDetails(WebDriver driver) {
-		this.driver=driver;
-		
-	}
-	
-	//Color blue tag
-	@FindBy(id="color_14")
-	WebElement blueTag;
-	
-	//Add to cart button
-	//@FindBy(xpath="//p[@id='send_friend_button']/button")
-	//@FindBy(css=".exclusive > span")
-	//@FindBy(xpath="//p[@id='add_to_cart']/button/span")
-	//@FindBy(xpath="//div[3]/div/p/button/span")
+public class ProductDetails  {
+	//----------------------------WEB ELEMENTS---------------------------------//
 	
 	@FindBy(xpath="//span[contains(.,'Add to cart')]")
 	WebElement addBtn;
 	
 	@FindBy(xpath="//span[contains(.,'Proceed to checkout')]")
-	WebElement continuar;
+	WebElement continueBtn;
 	
-	public void clickOnColor() throws InterruptedException {
-		blueTag.click();
-		Thread.sleep(6000);
+	//----------------------------INSTRUCTIONS---------------------------------//
+	
+	final WebDriver driver;
+	public ProductDetails(WebDriver driver) {
+		this.driver=driver;	
 	}
 	
 	public void addToCart() throws InterruptedException {
@@ -40,8 +26,8 @@ public class ProductDetails {
 	}
 	
 	public void continuar() throws InterruptedException {
+		continueBtn.click();
 		Thread.sleep(4000);
-		continuar.click();
 	}
 	
 }

@@ -5,14 +5,12 @@
     <classes>
       <class name="MyTest.Test1">
         <methods>
+          <include name="proceedToCheckOut"/>
           <include name="setBaseURL"/>
           <include name="colorSelection"/>
           <include name="fillCreateMail"/>
           <include name="search"/>
           <include name="endSession"/>
-          <include name="fillRegisterData"/>
-          <include name="clickSignIn"/>
-          <include name="continuarSelection"/>
         </methods>
       </class> <!-- MyTest.Test1 -->
     </classes>
