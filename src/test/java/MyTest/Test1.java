@@ -30,7 +30,7 @@ public class Test1 {
 	
 	@BeforeTest
 	public void setBaseURL() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C://Users//ernesto.aguilar//Documents//chromedriver_win32//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://Users//a.garcia.barrios//Desktop//Accenture//Selenium//chromedriver_win32//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
@@ -157,8 +157,8 @@ public class Test1 {
     	
     }
     
-    //@AfterTest
-    //public void endSession() {
-    //driver.quit();
-    //}
+    @AfterTest
+    public void endSession() {
+    driver.quit();
+    }
 }

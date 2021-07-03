@@ -22,7 +22,7 @@ public class MyAccount {
 	WebElement searchBtn;
 	
 	//Tshirt image
-	@FindBy(xpath="//img[@title='Faded Short Sleeve T-shirts']")
+	@FindBy(xpath="//img[@alt='Faded Short Sleeve T-shirts']") //title en lugar de alt 
 	WebElement productImage;
 	
 	public void makeASearch(String busqueda) throws InterruptedException {
