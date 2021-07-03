@@ -44,7 +44,7 @@ public class Test1 {
 		loginPage authPage = PageFactory.initElements(driver, loginPage.class);
 		//CreateAccountPage createAccPage = PageFactory.initElements(driver, CreateAccountPage.class);
 		Thread.sleep(6000);
-		authPage.createAccount("correo7851544687@gmail.com");
+		authPage.createAccount("coeo7851544687@gmail.com");
 	}
 	
 	@Test (priority = 3)
