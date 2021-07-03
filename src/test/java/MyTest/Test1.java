@@ -21,7 +21,7 @@ public class Test1 {
 	
 	@BeforeTest
 	public void setBaseURL() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C://Users//ernesto.aguilar//Documents//chromedriver_win32//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://Users//f.gabriel.escareno//Downloads//chromedriver_win32//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
