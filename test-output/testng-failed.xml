@@ -5,9 +5,8 @@
     <classes>
       <class name="MyTest.Test1">
         <methods>
-          <include name="proceedToCheckOut"/>
           <include name="setBaseURL"/>
-          <include name="endSession"/>
+          <include name="returnToOrders"/>
         </methods>
       </class> <!-- MyTest.Test1 -->
     </classes>
