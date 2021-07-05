@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MyTest.Test1">
-        <methods>
+          <include name="endSession"/>
+          <include name="returnToAccount"/>
+          <include name="choosePaymentMethod"/>
+          <include name="clickSignIn"/>
+          <include name="orderHistory"/>
           <include name="proceedToCheckOut"/>
           <include name="setBaseURL"/>
-          <include name="colorSelection"/>
-          <include name="fillCreateMail"/>
-          <include name="search"/>
-          <include name="endSession"/>
+          <include name="addressesCheckOut"/>
+          <include name="confirmOrder"/>
+          <include name="shippingCheckOut"/>
+          <include name="SignIn"/>
+          <include name="generatePDF"/>
         </methods>
-      </class> <!-- MyTest.Test1 -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
