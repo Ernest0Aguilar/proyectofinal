@@ -6,24 +6,21 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
 
-		
-		final WebDriver driver; 
-		
-		public HomePage(WebDriver driver) {
-			this.driver=driver;
-		}
-		
-		//Sign in link
-		@FindBy(xpath= "//a[@class='login']")
-		WebElement SignInBtn;
+	final WebDriver driver;
 
-		public void clickSignIn() throws InterruptedException {
-			Thread.sleep(2000);
-			SignInBtn.click();
-			Thread.sleep(3000);
-			
-		}
-		
-		
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	// Sign in link
+	@FindBy(xpath = "//a[@class='login']")
+	WebElement SignInBtn;
+
+	public void clickSignIn() throws InterruptedException {
+		Thread.sleep(2000);
+		SignInBtn.click();
+		Thread.sleep(3000);
 
 	}
+
+}

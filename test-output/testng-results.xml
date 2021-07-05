@@ -1,65 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="132191" started-at="2021-07-02T19:39:19 CDT" finished-at="2021-07-02T19:41:31 CDT">
+  <suite name="Default suite" duration-ms="59332" started-at="2021-07-04T21:03:21 CDT" finished-at="2021-07-04T21:04:20 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="132191" started-at="2021-07-02T19:39:19 CDT" finished-at="2021-07-02T19:41:31 CDT">
-      <class name="MyTest.Test1">
-        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:MyTest.Test1@587d1d39]" name="setBaseURL" is-config="true" duration-ms="10773" started-at="2021-07-02T19:39:19 CDT" finished-at="2021-07-02T19:39:30 CDT">
+    <test name="Default test" duration-ms="59332" started-at="2021-07-04T21:03:21 CDT" finished-at="2021-07-04T21:04:20 CDT">
+      <class name="ReviewTest.writeAReview">
+        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:ReviewTest.writeAReview@58c1670b]" name="setBaseURL" is-config="true" duration-ms="10766" started-at="2021-07-04T21:03:21 CDT" finished-at="2021-07-04T21:03:32 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseURL -->
-        <test-method status="PASS" signature="clickSignIn()[pri:1, instance:MyTest.Test1@587d1d39]" name="clickSignIn" duration-ms="6439" started-at="2021-07-02T19:39:30 CDT" finished-at="2021-07-02T19:39:36 CDT">
+        <test-method status="PASS" signature="clickSignIn()[pri:1, instance:ReviewTest.writeAReview@58c1670b]" name="clickSignIn" duration-ms="6323" started-at="2021-07-04T21:03:32 CDT" finished-at="2021-07-04T21:03:38 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSignIn -->
-        <test-method status="PASS" signature="fillCreateMail()[pri:2, instance:MyTest.Test1@587d1d39]" name="fillCreateMail" duration-ms="10175" started-at="2021-07-02T19:39:36 CDT" finished-at="2021-07-02T19:39:46 CDT">
+        <test-method status="PASS" signature="signIn()[pri:2, instance:ReviewTest.writeAReview@58c1670b]" name="signIn" duration-ms="5107" started-at="2021-07-04T21:03:38 CDT" finished-at="2021-07-04T21:03:43 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillCreateMail -->
-        <test-method status="PASS" signature="fillRegisterData()[pri:3, instance:MyTest.Test1@587d1d39]" name="fillRegisterData" duration-ms="11446" started-at="2021-07-02T19:39:46 CDT" finished-at="2021-07-02T19:39:58 CDT">
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="navigateToWomen()[pri:3, instance:ReviewTest.writeAReview@58c1670b]" name="navigateToWomen" duration-ms="4725" started-at="2021-07-04T21:03:43 CDT" finished-at="2021-07-04T21:03:48 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillRegisterData -->
-        <test-method status="PASS" signature="search()[pri:4, instance:MyTest.Test1@587d1d39]" name="search" duration-ms="19663" started-at="2021-07-02T19:39:58 CDT" finished-at="2021-07-02T19:40:18 CDT">
+        </test-method> <!-- navigateToWomen -->
+        <test-method status="PASS" signature="navigateToTops()[pri:4, instance:ReviewTest.writeAReview@58c1670b]" name="navigateToTops" duration-ms="4335" started-at="2021-07-04T21:03:48 CDT" finished-at="2021-07-04T21:03:52 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="colorSelection()[pri:5, instance:MyTest.Test1@587d1d39]" name="colorSelection" duration-ms="7071" started-at="2021-07-02T19:40:18 CDT" finished-at="2021-07-02T19:40:25 CDT">
+        </test-method> <!-- navigateToTops -->
+        <test-method status="PASS" signature="selecProduct()[pri:5, instance:ReviewTest.writeAReview@58c1670b]" name="selecProduct" duration-ms="4320" started-at="2021-07-04T21:03:52 CDT" finished-at="2021-07-04T21:03:56 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- colorSelection -->
-        <test-method status="PASS" signature="continuarSelection()[pri:6, instance:MyTest.Test1@587d1d39]" name="continuarSelection" duration-ms="10048" started-at="2021-07-02T19:40:25 CDT" finished-at="2021-07-02T19:40:35 CDT">
+        </test-method> <!-- selecProduct -->
+        <test-method status="PASS" signature="clickWriteAReview()[pri:6, instance:ReviewTest.writeAReview@58c1670b]" name="clickWriteAReview" duration-ms="3109" started-at="2021-07-04T21:03:56 CDT" finished-at="2021-07-04T21:03:59 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- continuarSelection -->
-        <test-method status="PASS" signature="proceedToCheckOut()[pri:7, instance:MyTest.Test1@587d1d39]" name="proceedToCheckOut" duration-ms="12932" started-at="2021-07-02T19:40:35 CDT" finished-at="2021-07-02T19:40:48 CDT">
+        </test-method> <!-- clickWriteAReview -->
+        <test-method status="PASS" signature="leaveReview()[pri:7, instance:ReviewTest.writeAReview@58c1670b]" name="leaveReview" duration-ms="10333" started-at="2021-07-04T21:03:59 CDT" finished-at="2021-07-04T21:04:10 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- proceedToCheckOut -->
-        <test-method status="PASS" signature="addressesCheckOut()[pri:8, instance:MyTest.Test1@587d1d39]" name="addressesCheckOut" duration-ms="9180" started-at="2021-07-02T19:40:48 CDT" finished-at="2021-07-02T19:40:57 CDT">
+        </test-method> <!-- leaveReview -->
+        <test-method status="PASS" signature="finishReview()[pri:8, instance:ReviewTest.writeAReview@58c1670b]" name="finishReview" duration-ms="3359" started-at="2021-07-04T21:04:10 CDT" finished-at="2021-07-04T21:04:13 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addressesCheckOut -->
-        <test-method status="PASS" signature="shippingCheckOut()[pri:8, instance:MyTest.Test1@587d1d39]" name="shippingCheckOut" duration-ms="9201" started-at="2021-07-02T19:40:57 CDT" finished-at="2021-07-02T19:41:06 CDT">
+        </test-method> <!-- finishReview -->
+        <test-method status="PASS" signature="returnHome()[pri:9, instance:ReviewTest.writeAReview@58c1670b]" name="returnHome" duration-ms="6054" started-at="2021-07-04T21:04:13 CDT" finished-at="2021-07-04T21:04:19 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shippingCheckOut -->
-        <test-method status="PASS" signature="choosePaymentMethod()[pri:9, instance:MyTest.Test1@587d1d39]" name="choosePaymentMethod" duration-ms="7170" started-at="2021-07-02T19:41:06 CDT" finished-at="2021-07-02T19:41:13 CDT">
+        </test-method> <!-- returnHome -->
+        <test-method status="PASS" signature="endSession()[pri:0, instance:ReviewTest.writeAReview@58c1670b]" name="endSession" is-config="true" duration-ms="862" started-at="2021-07-04T21:04:19 CDT" finished-at="2021-07-04T21:04:20 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- choosePaymentMethod -->
-        <test-method status="PASS" signature="confirmOrder()[pri:10, instance:MyTest.Test1@587d1d39]" name="confirmOrder" duration-ms="8818" started-at="2021-07-02T19:41:13 CDT" finished-at="2021-07-02T19:41:22 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- confirmOrder -->
-        <test-method status="PASS" signature="returnToOrders()[pri:11, instance:MyTest.Test1@587d1d39]" name="returnToOrders" duration-ms="9229" started-at="2021-07-02T19:41:22 CDT" finished-at="2021-07-02T19:41:31 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- returnToOrders -->
-      </class> <!-- MyTest.Test1 -->
+        </test-method> <!-- endSession -->
+      </class> <!-- ReviewTest.writeAReview -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

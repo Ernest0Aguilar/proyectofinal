@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MyTest.Test1">
+      <class name="ReviewTest.writeAReview">
         <methods>
-          <include name="proceedToCheckOut"/>
           <include name="setBaseURL"/>
-          <include name="endSession"/>
+          <include name="finishReview"/>
         </methods>
-      </class> <!-- MyTest.Test1 -->
+      </class> <!-- ReviewTest.writeAReview -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
