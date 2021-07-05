@@ -31,8 +31,14 @@ public class MyAccount {
 	@FindBy(xpath = "//a[contains(text(),'Women')]")
 	WebElement womenCategBtn;
 	
-	// ----------------------------INSTRUCTIONS---------------------------------//
-
+	//Homepage button
+	@FindBy(xpath="//img[@alt='My Store']")
+	WebElement homePageImage;
+	
+	//Order History button
+	@FindBy(xpath="//a[@title='Orders']")
+	WebElement OrdersButton;
+	
 	public void makeASearch(String busqueda) throws InterruptedException {
 		searchBar.sendKeys(busqueda);
 		searchBtn.click();
@@ -47,5 +53,17 @@ public class MyAccount {
 	public void womenCategory() throws InterruptedException {
 		womenCategBtn.click();
 		Thread.sleep(3000);
+	}
+
+	public void ClickHomePage() throws InterruptedException {
+		homePageImage.click();
+		Thread.sleep(3000);
+		
+	}
+
+	public void ClickOrders() throws InterruptedException {
+		OrdersButton.click();
+		Thread.sleep(3000);
+		
 	}
 }

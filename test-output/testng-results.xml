@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="59332" started-at="2021-07-04T21:03:21 CDT" finished-at="2021-07-04T21:04:20 CDT">
     <groups>
     </groups>
@@ -52,6 +53,70 @@
           </reporter-output>
         </test-method> <!-- endSession -->
       </class> <!-- ReviewTest.writeAReview -->
+=======
+  <suite name="Default suite" duration-ms="126707" started-at="2021-07-03T10:39:39 CDT" finished-at="2021-07-03T10:41:45 CDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="126707" started-at="2021-07-03T10:39:39 CDT" finished-at="2021-07-03T10:41:45 CDT">
+      <class name="MyTest.GeneratePDF">
+        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:MyTest.GeneratePDF@36b4cef0]" name="setBaseURL" is-config="true" duration-ms="12366" started-at="2021-07-03T10:39:39 CDT" finished-at="2021-07-03T10:39:51 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseURL -->
+        <test-method status="PASS" signature="clickSignIn()[pri:1, instance:MyTest.GeneratePDF@36b4cef0]" name="clickSignIn" duration-ms="7617" started-at="2021-07-03T10:39:51 CDT" finished-at="2021-07-03T10:39:59 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignIn -->
+        <test-method status="PASS" signature="SignIn()[pri:2, instance:MyTest.GeneratePDF@36b4cef0]" name="SignIn" duration-ms="6692" started-at="2021-07-03T10:39:59 CDT" finished-at="2021-07-03T10:40:05 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="ReturnHomePage()[pri:3, instance:MyTest.GeneratePDF@36b4cef0]" name="ReturnHomePage" duration-ms="5502" started-at="2021-07-03T10:40:05 CDT" finished-at="2021-07-03T10:40:11 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReturnHomePage -->
+        <test-method status="PASS" signature="AddToCart()[pri:4, instance:MyTest.GeneratePDF@36b4cef0]" name="AddToCart" duration-ms="9307" started-at="2021-07-03T10:40:11 CDT" finished-at="2021-07-03T10:40:20 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method status="PASS" signature="proceedToCheckOut()[pri:5, instance:MyTest.GeneratePDF@36b4cef0]" name="proceedToCheckOut" duration-ms="13428" started-at="2021-07-03T10:40:20 CDT" finished-at="2021-07-03T10:40:33 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToCheckOut -->
+        <test-method status="PASS" signature="addressesCheckOut()[pri:6, instance:MyTest.GeneratePDF@36b4cef0]" name="addressesCheckOut" duration-ms="11133" started-at="2021-07-03T10:40:33 CDT" finished-at="2021-07-03T10:40:45 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressesCheckOut -->
+        <test-method status="PASS" signature="shippingCheckOut()[pri:7, instance:MyTest.GeneratePDF@36b4cef0]" name="shippingCheckOut" duration-ms="9824" started-at="2021-07-03T10:40:45 CDT" finished-at="2021-07-03T10:40:54 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingCheckOut -->
+        <test-method status="PASS" signature="choosePaymentMethod()[pri:8, instance:MyTest.GeneratePDF@36b4cef0]" name="choosePaymentMethod" duration-ms="8595" started-at="2021-07-03T10:40:54 CDT" finished-at="2021-07-03T10:41:03 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choosePaymentMethod -->
+        <test-method status="PASS" signature="confirmOrder()[pri:9, instance:MyTest.GeneratePDF@36b4cef0]" name="confirmOrder" duration-ms="8105" started-at="2021-07-03T10:41:03 CDT" finished-at="2021-07-03T10:41:11 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmOrder -->
+        <test-method status="PASS" signature="returnToAccount()[pri:10, instance:MyTest.GeneratePDF@36b4cef0]" name="returnToAccount" duration-ms="11823" started-at="2021-07-03T10:41:11 CDT" finished-at="2021-07-03T10:41:23 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnToAccount -->
+        <test-method status="PASS" signature="orderHistory()[pri:11, instance:MyTest.GeneratePDF@36b4cef0]" name="orderHistory" duration-ms="10684" started-at="2021-07-03T10:41:23 CDT" finished-at="2021-07-03T10:41:34 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method status="PASS" signature="generatePDF()[pri:12, instance:MyTest.GeneratePDF@36b4cef0]" name="generatePDF" duration-ms="6174" started-at="2021-07-03T10:41:34 CDT" finished-at="2021-07-03T10:41:40 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generatePDF -->
+        <test-method status="PASS" signature="endSession()[pri:0, instance:MyTest.GeneratePDF@36b4cef0]" name="endSession" is-config="true" duration-ms="5362" started-at="2021-07-03T10:41:40 CDT" finished-at="2021-07-03T10:41:45 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSession -->
+      </class> <!-- MyTest.GeneratePDF -->
+>>>>>>> dd411e284d954714e0b398e50e1d22fb808602d0
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
