@@ -12,7 +12,6 @@ public class MyAccount {
 		this.driver = driver;
 
 	}
-
 	// ----------------------------WEB ELEMENTS---------------------------------//
 
 	// Search bar
@@ -23,9 +22,18 @@ public class MyAccount {
 	@FindBy(xpath = "//button[@name=\"submit_search\"]")
 	WebElement searchBtn;
 
-	// T-shirt image
-	@FindBy(xpath = "//img[@alt='Faded Short Sleeve T-shirts']")
+	// Tshirt image
+	@FindBy(xpath = "//img[@title='Faded Short Sleeve T-shirts']")
 	WebElement productImage;
+
+	@FindBy(xpath = "//a[contains(text(),'Sign out')]")
+	WebElement Fuera;
+
+	// Click on Sign Out button
+	public void SignO() throws InterruptedException {
+		Fuera.click();
+		Thread.sleep(2000);
+	}
 
 	// WOMEN Button
 	@FindBy(xpath = "//a[contains(text(),'Women')]")
@@ -46,7 +54,7 @@ public class MyAccount {
 	//Order History button
 	@FindBy(xpath="//a[@title='Orders']")
 	WebElement OrdersButton;
-	
+
 	public void makeASearch(String busqueda) throws InterruptedException {
 		searchBar.sendKeys(busqueda);
 		searchBtn.click();
