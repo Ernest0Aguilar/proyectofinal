@@ -10,6 +10,10 @@ public class OrderConfirmation {
 	
 	@FindBy(xpath="//a[contains(text(),'Back to orders')]")
 	WebElement backToOrders;
+	
+	//myAccount button
+	@FindBy(xpath="//a[@class='account']")
+	WebElement MyAccountBtn;
 
 	//----------------------------WEB ELEMENTS---------------------------------//
 	
@@ -17,6 +21,11 @@ public class OrderConfirmation {
 		backToOrders.click();
 		Thread.sleep(2000);
 
+	}
+
+	public void ClickMyAccount() throws InterruptedException {
+		MyAccountBtn.click();
+		Thread.sleep(2000);
 	}
 	
 
