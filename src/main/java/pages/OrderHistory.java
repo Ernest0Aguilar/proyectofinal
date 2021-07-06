@@ -25,7 +25,7 @@ public class OrderHistory {
 
 	public void ClickPDF() throws InterruptedException {
 		PDFButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 }

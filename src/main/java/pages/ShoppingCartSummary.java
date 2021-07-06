@@ -22,7 +22,7 @@ public class ShoppingCartSummary {
 
 	public void proceedCheckout() throws InterruptedException {
 		checkOutBtn.click();
-		Thread.sleep(8000);
+		Thread.sleep(3000);
 	}
 
 }

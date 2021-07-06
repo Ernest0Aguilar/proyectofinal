@@ -16,12 +16,13 @@ public class Addresses {
 
 	final WebDriver driver;
 
-	public Addresses(WebDriver driver) {
+	public Addresses(WebDriver driver) throws InterruptedException {
 		this.driver = driver;
+		Thread.sleep(3000);
 	}
 
 	public void proceedToCheckout() throws InterruptedException {
 		checkOutBtn.click();
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 	}
 }

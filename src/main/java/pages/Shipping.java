@@ -28,7 +28,7 @@ public class Shipping {
 		checkTerms.click();
 		Thread.sleep(2000);
 		chckBtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 }

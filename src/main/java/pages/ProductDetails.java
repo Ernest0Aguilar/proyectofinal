@@ -34,22 +34,21 @@ public class ProductDetails {
 
 	public void addToCart() throws InterruptedException {
 		addBtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 
 	public void continuar() throws InterruptedException {
 		continueBtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 
 	public void linkReviewClick() throws InterruptedException {
 		linkReview.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 
 	public void clickLogo() throws InterruptedException {
 		principalLogo.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
-
 }

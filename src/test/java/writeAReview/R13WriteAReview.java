@@ -1,4 +1,4 @@
-package ReviewTest;
+package writeAReview;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,10 +17,8 @@ import pages.TopsSubcategory;
 import pages.WomenCategory;
 import pages.LoginPage;
 
-
-
-public class writeAReview {
-
+public class R13WriteAReview {
+	// ---------- RANDOM FOR NEW EMAILS ---------- //
 	Random rad = new Random();
 
 	WebDriver driver;

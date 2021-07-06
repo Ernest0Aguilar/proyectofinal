@@ -44,16 +44,17 @@ public class HomePage {
 		AddtoCartBtn.click();
 		Thread.sleep(2000);
 		CheckOut.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 
 	public void DeleteToCart() throws InterruptedException {
 		DeletetoCartBtn.click();
+		Thread.sleep(2000);
 	}
 
 	public void clickSignIn() throws InterruptedException {
 		Thread.sleep(2000);
 		SignInBtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 }

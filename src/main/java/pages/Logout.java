@@ -1,4 +1,4 @@
-package ConfirmOrder;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +22,6 @@ public class Logout {
 
 	public void logoutPage() throws InterruptedException {
 		logout.click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 	}
 }

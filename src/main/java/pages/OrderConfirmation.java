@@ -27,12 +27,11 @@ public class OrderConfirmation {
 	public void confirmOrder() throws InterruptedException {
 		backToOrders.click();
 		Thread.sleep(2000);
-
 	}
 
 	public void ClickMyAccount() throws InterruptedException {
 		MyAccountBtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 }

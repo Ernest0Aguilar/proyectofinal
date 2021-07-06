@@ -23,6 +23,6 @@ public class OrderSummary {
 
 	public void confirmOrder() throws InterruptedException {
 		confirmOrder.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 }

@@ -22,7 +22,7 @@ public class WomenCategory {
 
 	public void topsSubcategory() throws InterruptedException {
 		TopsBtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 
 }

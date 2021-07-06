@@ -51,17 +51,17 @@ public class AddWishlist {
 
 	public void searchClothes(String clothes) throws InterruptedException {
 		searchBox.sendKeys(clothes);
-		Thread.sleep(1000);
 		searchButton.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 
 	public void addToWishlist() throws InterruptedException {
 		Actions actionProvider = new Actions(driver);
 		actionProvider.moveToElement(pcd).build().perform();
 		wishlistButton.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		actionProvider.moveToElement(aler).build().perform();
 		closeBtn.click();
+		Thread.sleep(2000);
 	}
 }

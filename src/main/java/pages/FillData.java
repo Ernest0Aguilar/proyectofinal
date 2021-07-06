@@ -90,8 +90,8 @@ public class FillData {
 	public void registerData(String firstName, String lastName, String pass, String dayBirth, String monthBirth,
 			String yearBirth, String addressFirst, String addressLast, String address, String city1, String state1,
 			String zipcode, String country1, String mobile) throws InterruptedException {
+		Thread.sleep(2000);
 		radioBtnMr.click();
-		Thread.sleep(5000);
 		rgstrFrstName.sendKeys(firstName);
 		rgstrLstName.sendKeys(lastName);
 		password.sendKeys(pass);
@@ -107,6 +107,6 @@ public class FillData {
 		country.sendKeys(country1);
 		mobileNumber.sendKeys(mobile);
 		rgstrAccBtn.click();
-
+		Thread.sleep(2000);
 	}
 }

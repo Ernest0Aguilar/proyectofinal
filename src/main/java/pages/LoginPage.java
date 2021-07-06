@@ -12,7 +12,7 @@ public class LoginPage {
 	@FindBy(id = "email_create")
 	WebElement emailTextBoxCreate;
 
-	// Input password to register
+	// Submit create acconut
 	@FindBy(id = "SubmitCreate")
 	WebElement createButton;
 
@@ -24,14 +24,18 @@ public class LoginPage {
 	@FindBy(id = "passwd")
 	WebElement passTextBox;
 	
+	// Forgot password link
+	@FindBy(xpath = "//a[@title='Recover your forgotten password']")
+	WebElement forgotPassword;
+	
 	// Log in button
 	@FindBy(xpath = "//button[@id='SubmitLogin']/span")
 	WebElement logInButton;
-
-	// Login button
-	@FindBy(id = "SubmitLogin")
-	WebElement submitButton;
-
+	
+	// Log in button
+	@FindBy(xpath = "//header[@id='header']/div[2]/div/div/nav/div/a")
+	WebElement logInTopLink;
+	
 	// ---------- INSTRUCTIONS ---------- //
 
 	final WebDriver driver;
@@ -42,16 +46,23 @@ public class LoginPage {
 
 	public void createAccount(String email) throws InterruptedException {
 		emailTextBoxCreate.sendKeys(email);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		createButton.click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 	}
 
 	public void SignIn(String email, String password) throws InterruptedException {
 		emailTextBox.sendKeys(email);
+		Thread.sleep(2000);
 		passTextBox.sendKeys(password);
-		Thread.sleep(1000);
-		submitButton.click();
+		Thread.sleep(2000);
+		logInButton.click();
+		Thread.sleep(2000);
+	}
+	
+	public void openSignIn() throws InterruptedException {
+		logInTopLink.click();
 		Thread.sleep(3000);
 	}
+	
 }

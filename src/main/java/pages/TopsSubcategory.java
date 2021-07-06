@@ -22,8 +22,7 @@ public class TopsSubcategory {
 	
 	public void productSelection() throws InterruptedException {
 		product.click();
-		Thread.sleep(3000);
-
+		Thread.sleep(2000);
 	}
 
 }

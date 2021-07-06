@@ -23,7 +23,6 @@ public class PaymentCheckOut {
 	public void selectPaymentMethod() throws InterruptedException {
 		selectMethod.click();
 		Thread.sleep(2000);
-
 	}
 
 }

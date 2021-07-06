@@ -1,4 +1,4 @@
-package MyTest;
+package generatePdf;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +18,7 @@ import pages.Shipping;
 import pages.ShoppingCartSummary;
 import pages.LoginPage;
 
-public class GeneratePDF {
+public class R12GeneratePdf {
 
 	WebDriver driver;
 
@@ -31,121 +31,105 @@ public class GeneratePDF {
 		driver.manage().window().maximize();
 		Thread.sleep(4000);
 	}
+	
+	// ---------- GO TO LOGIN PAGE ---------- //
 
-	// ----------------------------GO TO LOGIN
-	// PAGE---------------------------------//
-
-	@Test(priority = 1)
+	@Test(priority = 0)
 	public void clickSignIn() throws InterruptedException {
 		HomePage mainpage = PageFactory.initElements(driver, HomePage.class);
 		mainpage.clickSignIn();
 	}
 
-	// ----------------------------SIGN
-	// IN------------------------------------------//
+	// ---------- SIGN IN ---------- //
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void SignIn() throws InterruptedException {
 		LoginPage signin = PageFactory.initElements(driver, LoginPage.class);
 		signin.SignIn("selprueba@gmail.com", "12345");
 	}
 
-	// ----------------------------GO TO Home
-	// PAGE----------------------------------//
+	// ---------- GO TO HOME PAGE ---------- //
 
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void ReturnHomePage() throws InterruptedException {
 		MyAccount returnHomePage = PageFactory.initElements(driver, MyAccount.class);
 		returnHomePage.ClickHomePage();
 	}
 
-	// ----------------------------ADD TO
-	// CART--------------------------------------//
+	// ----------ADD PRODUCT TO CART ---------- //
 
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void AddToCart() throws InterruptedException {
 		HomePage addToCart = PageFactory.initElements(driver, HomePage.class);
 		addToCart.AddToCart();
 	}
 
-	// ----------------------------PROCEED TO CHEKOUT-----------------------------//
+	// ---------- PROCEED TO CHECKOUT ---------- //
 
-	@Test(priority = 5)
+	@Test(priority = 4)
 	public void proceedToCheckOut() throws InterruptedException {
 		ShoppingCartSummary checkOut = PageFactory.initElements(driver, ShoppingCartSummary.class);
-		Thread.sleep(4000);
 		checkOut.proceedCheckout();
 	}
 
-	// --------------------------ADDRESSES----------------------------------------//
+	// ---------- SELECT ADDRESS ---------- //
 
-	@Test(priority = 6)
+	@Test(priority = 5)
 	public void addressesCheckOut() throws InterruptedException {
 		Addresses checkOut = PageFactory.initElements(driver, Addresses.class);
-		Thread.sleep(4000);
 		checkOut.proceedToCheckout();
-
 	}
 
-	// --------------------------SHIPPING-----------------------------------------//
+	// ---------- SHIPPING ---------- //
 
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void shippingCheckOut() throws InterruptedException {
 		Shipping checkOut = PageFactory.initElements(driver, Shipping.class);
-		Thread.sleep(4000);
 		checkOut.proceedToCheckout();
-
 	}
 
-	// -------------------------PAYMENT------------------------------------------//
+	// ---------- PAYMENT ---------- //
 
-	@Test(priority = 8)
+	@Test(priority = 7)
 	public void choosePaymentMethod() throws InterruptedException {
 		PaymentCheckOut method = PageFactory.initElements(driver, PaymentCheckOut.class);
-		Thread.sleep(4000);
 		method.selectPaymentMethod();
-
 	}
 
-	// -------------------------ORDERSUMMARY-------------------------------------//
+	// ---------- ORDER SUMMARY ---------- //
 
-	@Test(priority = 9)
+	@Test(priority = 8)
 	public void confirmOrder() throws InterruptedException {
 		OrderSummary confirm = PageFactory.initElements(driver, OrderSummary.class);
-		Thread.sleep(4000);
 		confirm.confirmOrder();
-
 	}
 
-	// --------------------------ORDERCONFIRMATION------------------------------//
+	// ---------- ORDER CONFIRMATION ---------- //
 
-	@Test(priority = 10)
+	@Test(priority = 9)
 	public void returnToAccount() throws InterruptedException {
 		OrderConfirmation account = PageFactory.initElements(driver, OrderConfirmation.class);
-		Thread.sleep(4000);
 		account.ClickMyAccount();
 	}
 
-	// --------------------------ORDERHISTORY----------------------------------//
+	// ---------- ORDER HISTORY ---------- //
 
-	@Test(priority = 11)
+	@Test(priority = 10)
 	public void orderHistory() throws InterruptedException {
 		MyAccount orders = PageFactory.initElements(driver, MyAccount.class);
-		Thread.sleep(4000);
 		orders.ClickOrders();
 	}
 
-	// ---------------------------GENERATEPDF-----------------------------------//
-	@Test(priority = 12)
+	// ---------- GENERATE PDF ---------- //
+	
+	@Test(priority = 11)
 	public void generatePDF() throws InterruptedException {
 		OrderHistory pdf = PageFactory.initElements(driver, OrderHistory.class);
-		Thread.sleep(4000);
-		pdf.ClickPDF();// revisar OrderHistory.java
+		pdf.ClickPDF();
 	}
 
 	@AfterTest
 	public void endSession() throws InterruptedException {
-		Thread.sleep(4000);
 		driver.quit();
 	}
 

@@ -1,4 +1,4 @@
-package AddandDeleteCart;
+package shoppingCart;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.MyAccount;
 
-public class AddandDeleteCart {
+public class R05ShoppingCart {
 	WebDriver driver;
 
 	@BeforeTest

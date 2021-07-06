@@ -47,7 +47,7 @@ public class MyAccount {
 
 	public void SignO() throws InterruptedException {
 		Fuera.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	public void makeASearch(String busqueda) throws InterruptedException {
@@ -75,7 +75,6 @@ public class MyAccount {
 	public void ClickOrders() throws InterruptedException {
 		OrdersButton.click();
 		Thread.sleep(3000);
-
 	}
 
 }

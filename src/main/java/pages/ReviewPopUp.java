@@ -34,12 +34,9 @@ public class ReviewPopUp {
 
 	public void writeOpinion(String title, String content) throws InterruptedException {
 		starsCalification.click();
-		Thread.sleep(2000);
 		reviewTitle.sendKeys(title);
-		Thread.sleep(2000);
 		reviewContent.sendKeys(content);
-		Thread.sleep(2000);
 		sendReview.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	}
 }

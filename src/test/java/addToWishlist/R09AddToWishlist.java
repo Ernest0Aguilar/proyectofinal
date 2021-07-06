@@ -1,5 +1,4 @@
-package logInTest;
-
+package addToWishlist;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,12 +7,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import pages.AccessInf;
-import pages.MyAccount;
-import pages.logInTest;
+import pages.LoginPage;
+import pages.AddWishlist;
 
-public class Process {
-
+public class R09AddToWishlist {
 	WebDriver driver;
 
 	@BeforeTest
@@ -25,23 +22,18 @@ public class Process {
 		driver.manage().window().maximize();
 		Thread.sleep(4000);
 	}
-
-	// Fill Access Information
+	
+	// ---------- LOGIN, SEARCH AND ADD PRODUCT TO WISHLIST ---------- //
+	
 	@Test
-	public void FillEmailPass() throws InterruptedException {
-		logInTest login = PageFactory.initElements(driver, logInTest.class);
-		AccessInf acces = PageFactory.initElements(driver, AccessInf.class);
-		login.openSignIn();
-		acces.Account("badunny@gmail.com");
-		acces.Pass("1234567");
-		acces.clickSign();
-	}
+	public void fillFirstAndLastName() throws InterruptedException {
+		AddWishlist addWish = PageFactory.initElements(driver, AddWishlist.class);
+		LoginPage auth = PageFactory.initElements(driver, LoginPage.class);
+		auth.openSignIn();
+		auth.SignIn("correodeprueba2021@gmail.com", "1234567");
+		addWish.searchClothes("Dress");
+		addWish.addToWishlist();
 
-	@Test
-	// My Account Page SignOut
-	public void Sout() throws InterruptedException {
-		MyAccount acc = PageFactory.initElements(driver, MyAccount.class);
-		acc.SignO();
 	}
 
 	@AfterTest
