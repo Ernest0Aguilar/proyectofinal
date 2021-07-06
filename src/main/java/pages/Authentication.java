@@ -6,30 +6,36 @@ import org.openqa.selenium.support.FindBy;
 
 public class Authentication {
 
-final WebDriver driver;
-	
+	// ---------- WEB ELEMENTS ---------- //
+
+	// Sing in button / link
+	@FindBy(xpath = "//a[@title='Log in to your customer account']")
+	WebElement signInLink;
+
+	// Email registered text box
+	@FindBy(id = "email")
+	WebElement emailTextBox;
+
+	// Password text box
+	@FindBy(id = "passwd")
+	WebElement passwordTextBox;
+
+	// Forgot password link
+	@FindBy(xpath = "//a[@title='Recover your forgotten password']")
+	WebElement forgotPassword;
+
+	// Log in button
+	@FindBy(id = "SubmitLogin")
+	WebElement signInButton;
+
+	// ---------- INSTRUCTIONS ---------- //
+
+	final WebDriver driver;
+
 	public Authentication(WebDriver driver) {
-		this.driver=driver;
+		this.driver = driver;
 	}
 
-	//----------------------------WEB ELEMENTS---------------------------------//
-	//Login with credentials
-	@FindBy(id="email")
-	WebElement emailTextBox;
-	
-	@FindBy(id="passwd")
-	WebElement passwordTextBox;
-	
-	@FindBy(xpath="//a[@title='Recover your forgotten password']")
-	WebElement forgotPassword;
-	
-	@FindBy(xpath="//a[@title='Log in to your customer account']")
-	WebElement signInLink;
-	
-	@FindBy(id="SubmitLogin")
-	WebElement signInButton;
-	//----------------------------Methods---------------------------------//
-	
 	public void login(String email, String password) throws InterruptedException {
 		signInLink.click();
 		Thread.sleep(3000);

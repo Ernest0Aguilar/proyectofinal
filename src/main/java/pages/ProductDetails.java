@@ -6,27 +6,31 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductDetails {
 
+	// ---------- WEB ELEMENTS ---------- //
+
+	// Add to cart button
+	@FindBy(xpath = "//span[contains(.,'Add to cart')]")
+	WebElement addBtn;
+
+	// Check out continue button
+	@FindBy(xpath = "//span[contains(.,'Proceed to checkout')]")
+	WebElement continueBtn;
+
+	// Write a review link
+	@FindBy(xpath = "//div[@id='product_comments_block_extra']/ul/li/a")
+	WebElement linkReview;
+
+	// Logo / HomePage link
+	@FindBy(xpath = "//div[@id='header_logo']/a/img")
+	WebElement principalLogo;
+
+	// ---------- INSTRUCTIONS ---------- //
+
 	final WebDriver driver;
 
 	public ProductDetails(WebDriver driver) {
 		this.driver = driver;
 	}
-
-	// ----------------------------WEB ELEMENTS---------------------------------//
-
-	@FindBy(xpath = "//span[contains(.,'Add to cart')]")
-	WebElement addBtn;
-
-	@FindBy(xpath = "//span[contains(.,'Proceed to checkout')]")
-	WebElement continueBtn;
-
-	@FindBy(xpath = "//div[@id='product_comments_block_extra']/ul/li/a")
-	WebElement linkReview;
-	
-	@FindBy(xpath = "//div[@id='header_logo']/a/img")
-	WebElement principalLogo;
-
-	// ----------------------------INSTRUCTIONS---------------------------------//
 
 	public void addToCart() throws InterruptedException {
 		addBtn.click();
@@ -42,7 +46,7 @@ public class ProductDetails {
 		linkReview.click();
 		Thread.sleep(3000);
 	}
-	
+
 	public void clickLogo() throws InterruptedException {
 		principalLogo.click();
 		Thread.sleep(3000);

@@ -1,5 +1,7 @@
 package testCreateNewUser;
 
+import java.util.Random;
+
 //Build path + Jars
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,19 +14,22 @@ import org.testng.annotations.Test;
 import pages.FillData;
 import pages.HomePage;
 import pages.MyAccount;
-import pages.loginPage;
+import pages.LoginPage;
 
 public class CreateNewUser {
+
 	WebDriver driver;
+
+	Random rad = new Random();
 
 	@BeforeTest
 	public void setBaseURL() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\o.tavares.cordova\\Downloads\\chromedriver_win32\\chromedriver.exe");
+				"C://Users//ernesto.aguilar//Documents//chromedriver_win32//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 	}
 
 	// --- GO TO LOGIN PAGE ---//
@@ -37,16 +42,16 @@ public class CreateNewUser {
 	// --- GO TO AUTHENTICATION PAGE ---//
 	@Test(priority = 2)
 	public void fillCreateMail() throws InterruptedException {
-		loginPage authPage = PageFactory.initElements(driver, loginPage.class);
-		Thread.sleep(2000);
-		authPage.createAccount("jw@personalmail.com");
+		LoginPage authPage = PageFactory.initElements(driver, LoginPage.class);
+		for (int j = 1; j <= 1; j++) {
+			authPage.createAccount("correo" + rad.nextInt(100) + "@gmail.com");
+		}
 	}
 
 	// --- FILL REGISTER DATA ---//
 	@Test(priority = 3)
 	public void fillRegisterData() throws InterruptedException {
 		FillData FillPage = PageFactory.initElements(driver, FillData.class);
-		Thread.sleep(4000);
 		FillPage.registerData("Jacobo", "Wong", "YouTuber", "20", "April", "2010", "Address First", "AddressLast",
 				"Address", "City Test", "Hawaii", "00000", "United States", "0123456789");
 	}
@@ -59,7 +64,6 @@ public class CreateNewUser {
 
 	@AfterTest
 	public void endSession() throws InterruptedException {
-		Thread.sleep(3000);
 		driver.quit();
 	}
 }

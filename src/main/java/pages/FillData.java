@@ -6,12 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class FillData {
 
-	final WebDriver driver;
-
-	public FillData(WebDriver driver) {
-		this.driver = driver;
-
-	}
+	// ---------- WEB ELEMENTS ---------- //
 
 	// Radio Button Mr.
 	@FindBy(id = "id_gender1")
@@ -82,6 +77,15 @@ public class FillData {
 	// Register button
 	@FindBy(id = "submitAccount")
 	WebElement rgstrAccBtn;
+
+	// ---------- INSTRUCTIONS ---------- //
+
+	final WebDriver driver;
+
+	public FillData(WebDriver driver) {
+		this.driver = driver;
+
+	}
 
 	public void registerData(String firstName, String lastName, String pass, String dayBirth, String monthBirth,
 			String yearBirth, String addressFirst, String addressLast, String address, String city1, String state1,

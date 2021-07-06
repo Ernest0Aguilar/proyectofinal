@@ -5,18 +5,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class OrderConfirmation {
+
+	// ---------- WEB ELEMENTS ---------- //
 	
-	//----------------------------WEB ELEMENTS---------------------------------//
-	
-	@FindBy(xpath="//a[contains(text(),'Back to orders')]")
+	// Back to orders button
+	@FindBy(xpath = "//a[contains(text(),'Back to orders')]")
 	WebElement backToOrders;
-	
-	//myAccount button
-	@FindBy(xpath="//a[@class='account']")
+
+	// MyAccount button
+	@FindBy(xpath = "//a[@class='account']")
 	WebElement MyAccountBtn;
 
-	//----------------------------WEB ELEMENTS---------------------------------//
-	
+	// ---------- INSTRUCTIONS ---------- //
+
+	public OrderConfirmation(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	final WebDriver driver;
+
 	public void confirmOrder() throws InterruptedException {
 		backToOrders.click();
 		Thread.sleep(2000);
@@ -27,6 +34,5 @@ public class OrderConfirmation {
 		MyAccountBtn.click();
 		Thread.sleep(2000);
 	}
-	
 
 }

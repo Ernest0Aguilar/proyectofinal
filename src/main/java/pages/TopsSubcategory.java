@@ -6,19 +6,19 @@ import org.openqa.selenium.support.FindBy;
 
 public class TopsSubcategory {
 
-	final WebDriver driver;
+	// ---------- WEB ELEMENTS ---------- //
 
-	public TopsSubcategory(WebDriver driver) {
-		this.driver = driver;
-	}
-
-	// ----------------------------WEB ELEMENTS---------------------------------//
-
-	// Faded Short Sleeve T-shirts -- PRODUCT
+	// Faded Short Sleeve T-shirts (Product)
 	@FindBy(xpath = "//a[contains(text(),'Faded Short Sleeve T-shirts')]")
 	WebElement product;
 
-	// ----------------------------INSTRUCTIONS---------------------------------//
+	// ---------- INSTRUCTIONS ---------- //
+	
+	final WebDriver driver;
+	
+	public TopsSubcategory(WebDriver driver) {
+		this.driver = driver;
+	}
 	
 	public void productSelection() throws InterruptedException {
 		product.click();
