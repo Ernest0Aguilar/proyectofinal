@@ -18,26 +18,23 @@ import pages.PaymentCheckOut;
 import pages.ProductDetails;
 import pages.Shipping;
 import pages.ShoppingCartSummary;
+
 import pages.LoginPage;
 
+import setPropertyConfig.SetConfig;
+
+@Test
 public class R15EndToEnd {
 
 	Random rad = new Random();
 
 	WebDriver driver;
 
-	@BeforeTest
-	public void setBaseURL() throws InterruptedException {
-
-		System.setProperty("webdriver.chrome.driver",
-				"C://Users//ernesto.aguilar//Documents//chromedriver_win32//chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://automationpractice.com/index.php");
-		driver.manage().window().maximize();
-	}
-
+	// idk, the problem is the IDE Eclipse :(
+	SetConfig objetodearranque = new SetConfig();
+	objetodearranque.setBaseURL("EDGE");
+	
 	// ---------- GO TO LOGIN PAGE ---------- //
-
 	@Test(priority=0)
 	public void clickSignIn() throws InterruptedException {
 		HomePage mainpage = PageFactory.initElements(driver, HomePage.class);
@@ -45,7 +42,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- FILL MAIL TO CREATE NEW ACCOUNT ---------- //
-
 	@Test(priority=1)
 	public void fillCreateMail() throws InterruptedException {
 		LoginPage authPage = PageFactory.initElements(driver, LoginPage.class);
@@ -55,7 +51,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- FILL NEW USER DATA ---------- //
-
 	@Test(priority=2)
 	public void fillRegisterData() throws InterruptedException {
 		FillData FillPage = PageFactory.initElements(driver, FillData.class);
@@ -64,7 +59,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- SEARCH A PRODUCT ---------- //
-
 	@Test(priority=3)
 	public void search() throws InterruptedException {
 		MyAccount makeasearch = PageFactory.initElements(driver, MyAccount.class);
@@ -73,7 +67,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- ADD PRODUCT TO SHOPPING CART ---------- //
-
 	@Test(priority=4)
 	public void addProduct() throws InterruptedException {
 		ProductDetails seleccionar = PageFactory.initElements(driver, ProductDetails.class);
@@ -81,7 +74,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- PROCEED TO CHECKOUT ---------- //
-
 	@Test(priority=5)
 	public void continuarSelection() throws InterruptedException {
 		ProductDetails seleccionar = PageFactory.initElements(driver, ProductDetails.class);
@@ -89,7 +81,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- CONTINUE CHECKOUT ---------- //
-
 	@Test(priority=6)
 	public void proceedToCheckOut() throws InterruptedException {
 		ShoppingCartSummary checkOut = PageFactory.initElements(driver, ShoppingCartSummary.class);
@@ -97,7 +88,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- CONTINUE CHECKOUT ---------- //
-
 	@Test(priority=7)
 	public void addressesCheckOut() throws InterruptedException {
 		Addresses checkOut = PageFactory.initElements(driver, Addresses.class);
@@ -106,7 +96,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- CONTINUE CHECKOUT ---------- //
-
 	@Test(priority=8)
 	public void shippingCheckOut() throws InterruptedException {
 		Shipping checkOut = PageFactory.initElements(driver, Shipping.class);
@@ -115,7 +104,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- CHOOSE PAYMENT METHOD ---------- //
-
 	@Test(priority=9)
 	public void choosePaymentMethod() throws InterruptedException {
 		PaymentCheckOut method = PageFactory.initElements(driver, PaymentCheckOut.class);
@@ -124,7 +112,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- CONFIRM ORDER ---------- //
-
 	@Test(priority=10)
 	public void confirmOrder() throws InterruptedException {
 		OrderSummary confirm = PageFactory.initElements(driver, OrderSummary.class);
@@ -133,7 +120,6 @@ public class R15EndToEnd {
 	}
 
 	// ---------- RETURN TO ORDERS ---------- //
-
 	@Test(priority=11)
 	public void returnToOrders() throws InterruptedException {
 		OrderConfirmation confirm = PageFactory.initElements(driver, OrderConfirmation.class);
