@@ -22,9 +22,16 @@ public class R03CreateNewUser {
 
 	@BeforeTest
 	public void setBaseURL() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",
-				"C://Users//ernesto.aguilar//Documents//chromedriver_win32//chromedriver.exe");
+		
+		System.setProperty("webdriver.chrome.driver",".\\web_drivers_general\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		//System.setProperty("webdriver.gecko.driver",".\\web_drivers_general\\geckodriver.exe");
+		//driver = new FirefoxDriver();
+		
+		//System.setProperty("webdriver.edge.driver",".\\web_drivers_general\\msedgedriver.exe");
+		//driver = new EdgeDriver();
+		
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
 		Thread.sleep(4000);
@@ -44,7 +51,7 @@ public class R03CreateNewUser {
 	public void fillCreateMail() throws InterruptedException {
 		LoginPage authPage = PageFactory.initElements(driver, LoginPage.class);
 		for (int j = 1; j <= 1; j++) {
-			authPage.createAccount("email" + rad.nextInt(10000) + "@gmail.com");
+			authPage.createAccount("email" + rad.nextInt(10000) + "@mailno.com");
 		}
 	}
 

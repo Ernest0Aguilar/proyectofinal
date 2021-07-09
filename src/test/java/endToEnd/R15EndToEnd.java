@@ -31,6 +31,13 @@ public class R15EndToEnd {
 
 		System.setProperty("webdriver.chrome.driver",".\\web_drivers_general\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		//System.setProperty("webdriver.gecko.driver",".\\web_drivers_general\\geckodriver.exe");
+		//driver = new FirefoxDriver();
+		
+		//System.setProperty("webdriver.edge.driver",".\\web_drivers_general\\msedgedriver.exe");
+		//driver = new EdgeDriver();
+		
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
 	}
